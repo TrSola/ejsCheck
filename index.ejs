@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>代辦</h1>
+    <input type="text" id="content" name="content">
+    <input type="submit" id="send" value="儲存">
+    <ul>
+        <% for(item in todolist){ %>
+        <li><%- todolist[item].content %> <input type="button" name="" value="刪除"></li> <% } %>
+
+    
+    </ul>
+</body>
+</html>
